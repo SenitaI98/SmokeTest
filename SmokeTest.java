@@ -127,8 +127,6 @@ public class SmokeTest {
         //Verify is right page opened (created report page)
         String expectedTitle = "PlaceLab - " + reportName;
         Assert.assertEquals(createdReport.getPageTitle(), expectedTitle, "Test fail, wrong report opened!");
-
-        createdReport.getAnalysisInfoWidget();
     }
 
     @Test(priority = 7, groups = {"Positive"}, description = "Verify that created report has all the necessary widgets")
